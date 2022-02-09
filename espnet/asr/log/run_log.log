@@ -1,0 +1,40 @@
+2021-10-28T15:55:57 (asr.sh:213:main) ./asr.sh --nbpe 1000 --stage 3 --stop_stage 6 --ngpu 4 --lang hi --local_data_opts --lang hi --use_lm false --token_type bpe --feats_type fbank_pitch --asr_args --normalize_conf norm_vars=False  --asr_config conf_Conformer/train_asr_transformer.yaml --inference_config conf/decode_asr.yaml --train_set tr_hi --valid_set dt_hi --test_sets et_hi --srctexts data/tr_hi/text --ngpu 4
+2021-10-28T15:55:58 (asr.sh:413:main) [Require Kaldi] Stage 3: fbank_pitch extract: data/ -> /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch
+utils/copy_data_dir.sh: copied data from data/tr_hi to /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/org/tr_hi
+utils/validate_data_dir.sh: Successfully validated data-directory /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/org/tr_hi
+steps/make_fbank_pitch.sh --nj 20 --cmd run.pl /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/org/tr_hi
+utils/validate_data_dir.sh: Successfully validated data-directory /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/org/tr_hi
+steps/make_fbank_pitch.sh [info]: segments file exists: using that.
+steps/make_fbank_pitch.sh: Succeeded creating filterbank and pitch features for tr_hi
+fix_data_dir.sh: kept all 102892 utterances.
+fix_data_dir.sh: old files are kept in /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/org/tr_hi/.backup
+utils/copy_data_dir.sh: copied data from data/dt_hi to /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/org/dt_hi
+utils/validate_data_dir.sh: Successfully validated data-directory /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/org/dt_hi
+steps/make_fbank_pitch.sh --nj 20 --cmd run.pl /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/org/dt_hi
+utils/validate_data_dir.sh: Successfully validated data-directory /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/org/dt_hi
+steps/make_fbank_pitch.sh [info]: segments file exists: using that.
+steps/make_fbank_pitch.sh: Succeeded creating filterbank and pitch features for dt_hi
+fix_data_dir.sh: kept all 2566 utterances.
+fix_data_dir.sh: old files are kept in /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/org/dt_hi/.backup
+utils/copy_data_dir.sh: copied data from data/et_hi to /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/et_hi
+utils/validate_data_dir.sh: Successfully validated data-directory /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/et_hi
+steps/make_fbank_pitch.sh --nj 20 --cmd run.pl /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/et_hi
+utils/validate_data_dir.sh: Successfully validated data-directory /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/et_hi
+steps/make_fbank_pitch.sh [info]: segments file exists: using that.
+steps/make_fbank_pitch.sh: Succeeded creating filterbank and pitch features for et_hi
+fix_data_dir.sh: kept all 2566 utterances.
+fix_data_dir.sh: old files are kept in /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/et_hi/.backup
+2021-10-28T17:09:43 (asr.sh:474:main) Stage 4: Remove long/short data: /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/org -> /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch
+utils/copy_data_dir.sh: copied data from /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/org/tr_hi to /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/tr_hi
+utils/validate_data_dir.sh: Successfully validated data-directory /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/tr_hi
+fix_data_dir.sh: kept 102844 utterances out of 102892
+utils/fix_data_dir.sh: filtered /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/tr_hi/wav.scp from 35776 to 35775 lines based on filter /tmp/kaldi.LD2V/recordings.
+fix_data_dir.sh: old files are kept in /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/tr_hi/.backup
+utils/copy_data_dir.sh: copied data from /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/org/dt_hi to /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/dt_hi
+utils/validate_data_dir.sh: Successfully validated data-directory /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/dt_hi
+fix_data_dir.sh: kept all 2566 utterances.
+fix_data_dir.sh: old files are kept in /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/dt_hi/.backup
+2021-10-28T17:09:55 (asr.sh:539:main) Stage 5: Generate token_list from /nlsasfs/home/nltm-pilot/anishb/dump/fbank_pitch/srctexts using BPE
+2021-10-28T17:10:28 (asr.sh:784:main) Stage 6-8: Skip lm-related stages: use_lm=false
+2021-10-28T17:10:28 (asr.sh:1307:main) Skip the uploading stages
+2021-10-28T17:10:28 (asr.sh:1310:main) Successfully finished. [elapsed=4471s]
