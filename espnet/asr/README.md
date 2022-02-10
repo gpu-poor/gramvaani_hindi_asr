@@ -50,7 +50,7 @@ beam_size: 20
  CUDA_VISIBLE_DEVICES=0,1,2,3 ./run.sh --stage 9 --stop-stage 10 --ngpu 4 # for a machine where 4 gpus are avilable. you can change CUDA_VISIBLE_DEVICES and --ngpu as per your own setup
 ```
 * the trained model can be found in `./exp/asr_tain.....` dir. the best model is choiced based on validation accuracy and best model file is named  `valid.acc.best.pth`
-</br>
+
 # Eval on validation or test set
 
 * The dataset on for eval is defined by `test_sets` variable in  `run.sh`
