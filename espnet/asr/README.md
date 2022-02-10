@@ -49,11 +49,9 @@ beam_size: 20
  ./run.sh --stage 3 --stop-stage 5  # data prep, tokeniser training
  CUDA_VISIBLE_DEVICES=0,1,2,3 ./run.sh --stage 9 --stop-stage 10 --ngpu 4 # for a machine where 4 gpus are avilable. you can change CUDA_VISIBLE_DEVICES and --ngpu as per your own setup
 ```
-* the trained model can be found in `./exp/asr_tain.....` dir. the best model is choiced based on validation accuracy and best model file is named   `valid.acc.best.pth`
-
-
-
-## Eval on validation or test set
+* the trained model can be found in `./exp/asr_tain.....` dir. the best model is choiced based on validation accuracy and best model file is named  `valid.acc.best.pth`
+</br>
+# Eval on validation or test set
 
 * The dataset on for eval is defined by `test_sets` variable in  `run.sh`
 * To start eval use command below
@@ -61,8 +59,7 @@ beam_size: 20
 CUDA_VISIBLE_DEVICES=0,1,2,3 ./run.sh --stage 11 --stop-stage 12 --ngpu 4 # stage 11 to 12 for decoding/eval
 ```
 
-
-## Eval on validation or test set using pre-trained baseline model
+# Eval on validation or test set using pre-trained baseline model
 > [Transformer trained model .pth](https://zenodo.org/record/6033179/files/valid.acc.best.pth?download=1)
 
 > [Conformer trained model .pth](https://zenodo.org/record/6037023/files/valid.acc.best.cf.pth?download=1)
