@@ -27,7 +27,7 @@ encoder_conf:
     selfattention_layer_type: "rel_selfattn"
     activation_type: "swish"
     use_cnn_module:  true
-    cnn_module_kernel: 31
+    cnn_module_kernel: 15
 
 decoder: transformer
 decoder_conf:
