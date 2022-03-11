@@ -1,6 +1,7 @@
 
 This readme provides steps to reproduce the training/inference of baseline trasformer/conformer models using [espnet](https://github.com/espnet/espnet)
 
+**NOTE:** Gram Vaani data has .mp3 files with mix of sampling rates ranging from 8KHz to 48 KHz for both labelled 100 hours of data & unlabelled 1000 hours of data. In order to build the below baselines all the audio files have been converted to .wav format and has been uniformly sampled to 16KHz.
 
 # ESPnet installation
 * please follow the steps provided [here](https://espnet.github.io/espnet/installation.html#step-2-installation-espnet)
