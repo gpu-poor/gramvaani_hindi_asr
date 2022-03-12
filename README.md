@@ -6,7 +6,7 @@
 |---|---|---|---|---|---|---
 Transformer|ESPnet|12 layers; nbpe: 1000|dev_5h| 37.3|19.6|Not used|
 |Conformer|ESPnet| 12 layers ; kernel size 15 ; nbpe: 1000|dev_5h|34.8|19|Not used|
-|TDNN|Kaldi|13 layers|dev_5h|31.39|17.19|3-gram LM|
+|TDNN|Kaldi|13 layers|dev_5h|30.12|16.12|3-gram LM|
 |CNN-TDNN|Kaldi|12 layers tdnn with cnn front-end|dev_5h|32.12|18.03|3-gram LM|
 
 # 
