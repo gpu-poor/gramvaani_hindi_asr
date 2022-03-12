@@ -8,7 +8,8 @@ SIL     SIL
 <babble/>       SIL
 <cough/>        SIL
 <music/>        SIL
-<incomplete/>	SIL
+<incomplete>   SIL
+<inaudible>   SIL
 I       ee k
 I       w a n
 II      d o
