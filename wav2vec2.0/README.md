@@ -4,7 +4,7 @@
 | -------- | ----------------- | ---------------------------------------------- | ---------------------------- | ------------------------------------------------------------ | ------- |
 | I        | Wav2Vec 2.0 Base  | 1000 hours Gramvaani unlabelled                | No finetuning                | [download](https://drive.google.com/file/d/1L6wh5hQ_-K0szGy9tpzF-jwm8gSa5pJe/view?usp=sharing) | N.A     |
 | II       | Wav2Vec 2.0 Base  | 1000 hours Gramvaani unlabelled                | 100 hours Gramvaani labelled | [download](https://drive.google.com/file/d/1MpUAtQ0TM7Vn92rIOxGUVj1oHOGrVDee/view?usp=sharing) | 35.973  |
-| III      | Wav2Vec 2.0 Large | 1000 hours Gramvaani unlabelled                | No finetuning                | [download](https://drive.google.com/file/d/1VtEWsjZgXnZvaCQj5aDx8t0WlfG1zVez/view?usp=sharing)                                                             | N.A     |
+| III      | Wav2Vec 2.0 Large | 1000 hours Gramvaani unlabelled                | No finetuning                |                                                              | N.A     |
 | IV       | Wav2Vec 2.0 Large | 1000 hours Gramvaani unlabelled                | 100 hours Gramvaani labelled |                                                              |         |
 | V        | Wav2Vec 2.0 Base  | N.A (pretrained model from AI4Bharat)          | 100 hours Gramvaani labelled | [download](https://drive.google.com/file/d/1OH-IQIk408wiUgWBoyAzeQEuC9KoXHOG/view?usp=sharing) | 33.307  |
 | VI       | Wav2Vec 2.0 Base  | N.A (pretrained model from Open-Speech-EkStep) | 100 hours Gramvaani labelled | [download](https://drive.google.com/file/d/1s9bAhLBOaWpKc2dd1W_fbgVmtwKhfMa-/view?usp=sharing) | 34.328  |
